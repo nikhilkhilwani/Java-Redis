@@ -1,6 +1,6 @@
 import redis.clients.jedis.Jedis;
 
-public class RedisExample {
+public class SortedLeaderBoard {
     public static void main(String[] args) {
         // Connect to Redis running on localhost (default port 6379)
         try (Jedis jedis = new Jedis("localhost", 6379)) {
@@ -22,5 +22,5 @@ public class RedisExample {
 
 
 //make sure redis-server is running
-//compile : javac -cp ".:lib/jedis-6.0.0.jar" RedisExample.java
-// run : java -cp ".:lib/jedis-6.0.0.jar" RedisExample
+//compile : javac -cp ".:lib/jedis-5.1.0.jar" SortedLeaderBoard.java
+// run : java -cp ".:lib/jedis-5.1.0.jar" SortedLeaderBoard
