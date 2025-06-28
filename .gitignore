@@ -1,0 +1,6 @@
+/target/
+/.idea/
+/.obsidian/
+/.DS_Store
+*.class
+
