@@ -1,6 +1,9 @@
 /target/
 /.idea/
 /.obsidian/
-/.DS_Store
+/.DS_Store/
 *.class
-
+src/.DS_Store
+src/main/.DS_Store
+.DS_Store
+src/main/java/.DS_Store

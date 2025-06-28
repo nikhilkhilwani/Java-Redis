@@ -5,18 +5,19 @@
 ---
 
 ## **Table of Contents**
-- [**Redis Java Integration Project**](#redis-java-integration-project)
-	- [**Table of Contents**](#table-of-contents)
+- [**Redis Java Integration Project**](#redisjavaintegrationproject)
+	- [**Table of Contents**](#tableofcontents)
 	- [**Project-Overview**](#project-overview)
 	- [**Prerequisites**](#prerequisites)
-	- [**Installation \& Setup**](#installation--setup)
-		- [**1. Clone the Repository (Optional)**](#1-clone-the-repository-optional)
-		- [**2. Start Redis Server**](#2-start-redis-server)
-		- [**3. Build the Project**](#3-build-the-project)
+	- [**Installation \& Setup**](#installation&setup)
+		- [**1. Clone the Repository (Optional)**](#1.clone-the-repository)
+		- [**2. Start Redis Server**](#2.start-redis-server)
+		- [**3. Build the Project**](#3build-the-project)
 	- [**Project-Components**](#project-components)
-		- [**1. Sorted-Leaderboard**](#1-sorted-leaderboard)
-		- [**2. PubSub-System**](#2-pubsub-system)
-		- [**3. URL-Shortener**](#3-url-shortener)
+		- [**1. Sorted-Leaderboard**](#1.sorted-leaderboard)
+		- [**2. PubSub-System**](#2.pubsub-system)
+		- [**3. URL-Shortener**](#3.url-shortener)
+		- [**4. ToDoList**](#4.todo-list)
 	- [**Technical-Details**](#technical-details)
 		- [Dependencies](#dependencies)
 		- [**Project-Structure**](#project-structure)
@@ -50,14 +51,14 @@ Before running the project, ensure you have:
 ---
 
 ## **Installation & Setup**
-### **1. Clone the Repository (Optional)**
+### **1. Clone-the-Repository**
 
 ```bash
 git clone https://github.com/nikhilkhilwani/Java-Redis.git
 cd Java-Redis
 ```
 
-### **2. Start Redis Server**
+### **2. Start-Redis-Server**
 
 ```bash
 redis-server
@@ -65,7 +66,7 @@ redis-server
 
 *Keep this running in a seperate Terminal*
 
-### **3. Build the Project**
+### **3. Build-the-Project**
 
 ```bash
 mvn clean package
@@ -167,6 +168,28 @@ Shortens long URLs (e.g., `http://example.com/very/very/very/long/url/` → `
 - CLI interface for management
 
 ***
+### **4. ToDo-List**
+**Description**
+ToDo list with features like:
+1. Add Task
+2. List Tasks
+3. Mark Task as Done
+4. Delete Task
+
+
+**Location**: /src/main/java/todolist/ToDoApp.java
+
+**How to Run**
+
+```bash
+mvn exec:java -Dexec.mainClass="todolist.TodoApp"
+``` 
+
+**Features**
+- Shows Task status (Pending/Completed)
+- User-Segregation by User-ID.
+- Multi-User support
+***
 
 ## **Technical-Details**
 
@@ -187,6 +210,7 @@ Shortens long URLs (e.g., `http://example.com/very/very/very/long/url/` → `
 			- leaderboard/
 			- pubsub/
 			- shortener/
+			- todolist/
 	- pom.xml                                  
 	- readme.md
 
