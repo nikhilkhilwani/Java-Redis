@@ -2,21 +2,6 @@ package todolist;
 import redis.clients.jedis.Jedis;
 import java.util.*;
 
-/**
- * Simple CLI To‑Do List backed by Redis.
- * ------------------------------------------------
- * Requirements:
- *   ‑ Redis running on localhost:6379
- *   ‑ Jedis 5.1.0 on classpath
- *
- * Compile:
- *   javac -cp "jedis-5.1.0.jar:." TodoApp.java   (Mac/Linux)
- *   javac -cp "jedis-5.1.0.jar;." TodoApp.java   (Windows)
- *
- * Run:
- *   java -cp "jedis-5.1.0.jar:." TodoApp         (Mac/Linux)
- *   java -cp "jedis-5.1.0.jar;." TodoApp         (Windows)
- */
 public class TodoApp {
 
     private static Jedis jedis;
