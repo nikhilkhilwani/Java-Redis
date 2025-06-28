@@ -12,7 +12,7 @@
 	- [**Installation \& Setup**](#installation&setup)
 		- [**1. Clone the Repository (Optional)**](#1.clone-the-repository)
 		- [**2. Start Redis Server**](#2.start-redis-server)
-		- [**3. Build the Project**](#3build-the-project)
+		- [**3. Build the Project**](#3.build-the-project)
 	- [**Project-Components**](#project-components)
 		- [**1. Sorted-Leaderboard**](#1.sorted-leaderboard)
 		- [**2. PubSub-System**](#2.pubsub-system)
@@ -32,6 +32,7 @@ This project demonstrates key Redis use cases implemented in Java:
 1. **Sorted Leaderboard** – Uses Redis Sorted Sets (ZSET) to maintain and display player rankings.
 2. **Pub/Sub Messaging** – A real-time publish-subscribe system with message logging.
 3. **URL Shortener** – A service to shorten long URLs with an HTTP redirection server.
+4. **ToDo List** - A program that acts as a CLI for a ToDo-List.
 
 Built with **Maven** for dependency management and tested with **Redis 7.x** and **Java 21**.
 
